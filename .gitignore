@@ -1,2 +1,2 @@
-/AIClothTryOn/Segment_DALN/.venv
-AIClothTryOn/Segment_DALN/model/model.safetensors
+/ClothTryOn/.venv
+ClothTryOn/model/model.safetensors
