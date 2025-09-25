@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>AI Try-On Result for {{ product.product_name }}</h2>
+<img src="data:image/png;base64,{{ segmentation_img }}" alt="Segmentation Result" />
+<a href="{% url 'product_detail' product.category.slug product.slug %}" class="btn btn-primary mt-3">Back to Product</a>
+{% endblock %}

@@ -2,9 +2,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.log
-.venv/
-.git/
-.gitignore
-model/*.pt
-**/.DS_Store
+*.db
+*.sqlite3
+.env
+.dbdata/

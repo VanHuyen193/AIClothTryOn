@@ -1,2 +1,4 @@
 /ClothTryOn/.venv
 ClothTryOn/model/model.safetensors
+ClothTryOn/ai_model/model.safetensors
+/ClothTryOn/.dbdata
