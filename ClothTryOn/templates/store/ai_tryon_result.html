@@ -1,6 +1,27 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2>AI Try-On Result for {{ product.product_name }}</h2>
-<img src="data:image/png;base64,{{ segmentation_img }}" alt="Segmentation Result" />
-<a href="{% url 'product_detail' product.category.slug product.slug %}" class="btn btn-primary mt-3">Back to Product</a>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg rounded-3 border-0">
+        <div class="card-header bg-primary text-white text-center">
+          <h3 class="mb-0">✨ AI Try-On Result ✨</h3>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="mb-3">{{ product.product_name }}</h5>
+          <img src="data:image/png;base64,{{ segmentation_img }}"
+               alt="Segmentation Result"
+               class="img-fluid rounded border mb-4"
+               style="max-height: 500px; object-fit: contain;" />
+        </div>
+        <div class="card-footer text-center bg-light">
+          <a href="{% url 'product_detail' product.category.slug product.slug %}" 
+             class="btn btn-outline-primary px-4">
+            ← Back to Product
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

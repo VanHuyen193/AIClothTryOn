@@ -2,3 +2,4 @@
 ClothTryOn/model/model.safetensors
 ClothTryOn/ai_model/model.safetensors
 /ClothTryOn/.dbdata
+ClothTryOn/ecommerce/settings.py
